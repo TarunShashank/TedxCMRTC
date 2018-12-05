@@ -1,9 +1,0 @@
-{
-    "name": "TEDxCMRTC",
-    "description": "WebSite",
-    "repository": "https://github.com/TarunShashank/TedxCMRTC",
-    "keywords": ["bootstrap"],
-    "env": {
-    },
-    "image": "heroku/nodejs"
-  }
