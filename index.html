@@ -65,15 +65,17 @@
                 <script src="js/parallax.js"></script>
                 <script>
 
-(function($){
-  'use strict';
-    $(window).on('load', function () {
-        if ($(".loader").length > 0)
-        {
-            $(".loader").fadeOut("slow");
-        }
-    });
-})(jQuery)
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 5000;
+function hidePreloader() {
+var preloader = $('.loader');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
 
 
                     // Pretty simple huh?
