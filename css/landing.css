@@ -16,6 +16,11 @@ body {
 
 /* preloader design */
 /* Start */
+
+.loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+
 .preloader1,
 .preloader1 .loader {
     display: flex;

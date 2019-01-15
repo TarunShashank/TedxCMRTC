@@ -64,6 +64,18 @@
                 <!-- Scripts -->
                 <script src="js/parallax.js"></script>
                 <script>
+
+(function($){
+  'use strict';
+    $(window).on('load', function () {
+        if ($(".loader").length > 0)
+        {
+            $(".loader").fadeOut("slow");
+        }
+    });
+})(jQuery)
+
+
                     // Pretty simple huh?
                     var scene = document.getElementById('scene');
                     var parallax = new Parallax(scene, {
