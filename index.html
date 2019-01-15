@@ -1,43 +1,75 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <title>TEDxCMRTC- inner demons</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/landing.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid">
-                <div class="logo">
-                        <img src="./images/logo.png">
-                </div>
-        </div>
+<html>
 
-            <div id="container" class="container">
-                    <div id="scene" class="scene">
-                        <!-- <div data-depth="1.00"><img src="./assets/images/layer1.png"></div> -->
-                        <div class="layer" data-depth="0.80"><img src="images/demon.png"></div>
-                        <!-- <div data-depth="0.60"><img src="./assets/images/layer3.png"></div> -->
-                        <div data-depth="0.40" class="animated fadeIn delay-1s"><div class="text"> Inner Demons </div> </div>
+<head>
+    <title>TEDxCMRTC- inner demons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="preloader1">
+                            <div class="loader loader-inner-1">
+                                <div class="loader loader-inner-2">
+                                    <div class="loader loader-inner-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <a class="navbar-brand mx-auto" href="#"><img src="./images/logo.png" style="height: auto; width: 180px;"></a>
+    </nav>
+
+
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 offset-lg-2  col-12 ">
+                    <div class="jumbotron jumbotron-fluid">
+                        <!-- <div class="container"> -->
+                            <div id="scene" class="scene">
+                                    <!-- <div data-depth="1.00"><img src="./assets/images/layer1.png"></div> -->
+                                    <div class="layer" data-depth="1.00"><img src="images/demon.png"></div>
+                                    <!-- <div class="layer" data-depth="0.60"><img src="images/smoke-2.png"></div> -->
+                                    <!-- <div data-depth="0.60"><img src="./assets/images/layer3.png"></div> -->
+                                    <div data-depth="0.40" class="animated fadeIn delay-1s">
+                                        <p class="text"> Inner Demons </>
+                                    </div>
+                            </div>
+                        <!-- </div> -->
                     </div>        
-                <button ><a href="./main.html">Know More</a></button> 
-            </div>           
+                </div>
+            </div>
+                    
+                    <button><a href="./main.html">Know More</a></button>
+    </div>
                 <!-- Scripts -->
                 <script src="js/parallax.js"></script>
                 <script>
-            
-                // Pretty simple huh?
-                var scene = document.getElementById('scene');
-                var parallax = new Parallax(scene, {
-                    selector: '.layer'
-                });
-            
+                    // Pretty simple huh?
+                    var scene = document.getElementById('scene');
+                    var parallax = new Parallax(scene, {
+                        selector: '.layer'
+                    });
                 </script>
-    </body>
+</body>
+
 </html>
