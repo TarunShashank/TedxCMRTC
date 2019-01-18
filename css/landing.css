@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #0c0c0c;
+    background: black;
     background-size: cover;
     font-size: 24px;
     margin: 0;
@@ -23,8 +23,8 @@ body {
 	top: 0;
 	width: 100%;
     height: 100%;
-    background: #0c0c0c;
-    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    background: black;
+    z-index: 1000; /* anything higher than z-index: 1000 of .loader-section */
 }
 
 .preloader1,
