@@ -111,6 +111,8 @@ img {
 
 .scene {
     margin: 0;
+    width: 100%;
+    background-size: 100%;
     /* padding: 50px; */
 }
 
